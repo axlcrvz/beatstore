@@ -1,35 +1,31 @@
-const beats = [
-    { name: 'Beat 1', audio: 'beat1.mp3', cover: 'cover1.jpg' },
-    { name: 'Beat 2', audio: 'beat2.mp3', cover: 'cover2.jpg' },
-    { name: 'Beat 3', audio: 'beat3.mp3', cover: 'cover3.jpg' }
+const playlist = [
+    { name: 'Song 1', audio: 'song1.mp3' },
+    { name: 'Song 2', audio: 'song2.mp3' },
+    { name: 'Song 3', audio: 'song3.mp3' }
 ];
 
-function createAudioPlayer(beat) {
-    const audio = new Audio(beat.audio);
+function createPlaylistItem(song) {
+    const playlistItem = document.createElement('li');
+    playlistItem.textContent = song.name;
+    playlistItem.addEventListener('click', function() {
+        playSong(song.audio);
+    });
 
-    const audioPlayer = document.createElement('div');
-    audioPlayer.className = 'audio-player';
-    audioPlayer.innerHTML = `
-        <img src="${beat.cover}" alt="${beat.name} cover">
-        <h2>${beat.name}</h2>
-        <button class="play-button" onclick="playBeat('${beat.audio}')"><img src="play-icon.png" alt="Play Icon"></button>
-    `;
-
-    return audioPlayer;
+    return playlistItem;
 }
 
-function playBeat(audioFile) {
+function playSong(audioFile) {
     const audio = new Audio(audioFile);
     audio.play();
 }
 
-function renderBeatStore() {
-    const beatContainer = document.getElementById('beat-container');
+function renderPlaylist() {
+    const playlistElement = document.getElementById('playlist');
 
-    beats.forEach(beat => {
-        const audioPlayer = createAudioPlayer(beat);
-        beatContainer.appendChild(audioPlayer);
+    playlist.forEach(song => {
+        const playlistItem = createPlaylistItem(song);
+        playlistElement.appendChild(playlistItem);
     });
 }
 
-renderBeatStore();
+renderPlaylist();
