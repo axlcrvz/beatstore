@@ -6,18 +6,21 @@ const beats = [
 
 function createAudioPlayer(beat) {
     const audio = new Audio(beat.audio);
-    audio.controls = true;
 
     const audioPlayer = document.createElement('div');
     audioPlayer.className = 'audio-player';
     audioPlayer.innerHTML = `
         <img src="${beat.cover}" alt="${beat.name} cover">
         <h2>${beat.name}</h2>
-        <button class="buy-button"><img src="cart-icon.png" alt="Cart Icon"></button>
+        <button class="play-button" onclick="playBeat('${beat.audio}')"><img src="play-icon.png" alt="Play Icon"></button>
     `;
-    audioPlayer.appendChild(audio);
 
     return audioPlayer;
+}
+
+function playBeat(audioFile) {
+    const audio = new Audio(audioFile);
+    audio.play();
 }
 
 function renderBeatStore() {
