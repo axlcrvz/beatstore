@@ -29,13 +29,13 @@ h1 {
     margin-right: 10px;
 }
 
-.audio-player .buy-button {
+.audio-player .play-button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.audio-player .buy-button img {
+.audio-player .play-button img {
     width: 20px;
     height: 20px;
 }
