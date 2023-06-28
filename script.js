@@ -29,3 +29,14 @@ function renderPlaylist() {
 }
 
 renderPlaylist();
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  const audioPlayer = document.getElementById('audio-player');
+  const beatUpload = document.getElementById('beat-upload');
+
+  beatUpload.addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    const fileURL = URL.createObjectURL(file);
+    audioPlayer.src = fileURL;
+  });
+});
