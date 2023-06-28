@@ -4,59 +4,23 @@ body {
   font-family: Arial, sans-serif;
 }
 
-header {
-  background-color: #3498db;
-  padding: 20px;
-  color: #fff;
-}
-
-.beat-list {
+.link-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: center;
 }
 
-.beat {
-  max-width: 300px;
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
-  transition: box-shadow 0.3s;
-}
-
-.beat:hover {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.play-button,
-.add-to-cart {
+a {
   display: block;
-  width: 100%;
   padding: 10px;
-  margin-top: 10px;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+  margin: 10px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
   transition: background-color 0.3s;
 }
 
-.play-button:hover,
-.add-to-cart:hover {
-  background-color: #2980b9;
-}
-
-.button-group {
-  display: flex;
-  justify-content: space-between;
-}
-
-footer {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-  font-size: 12px;
-  color: #777;
+a:hover {
+  background-color: #ff6600;
 }
