@@ -6,12 +6,13 @@ body {
 
 .link-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-a {
+.button {
   display: block;
+  width: 200px;
   padding: 10px;
   margin: 10px;
   background-color: orange;
@@ -19,8 +20,9 @@ a {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
+  text-align: center;
 }
 
-a:hover {
+.button:hover {
   background-color: #ff6600;
 }
