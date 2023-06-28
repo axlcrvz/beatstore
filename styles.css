@@ -23,3 +23,19 @@ h1 {
 #playlist li:hover {
     background-color: #ddd;
 }
+
+.beat-player {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#beat-upload {
+  display: block;
+  margin: 10px auto;
+}
+
+#audio-player {
+  width: 100%;
+}
