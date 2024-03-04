@@ -1,32 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BeatPack - Premium Music Beats</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header>
-  <h1>Introducing BeatPack</h1>
-  <p>Your Source for Premium Music Beats</p>
-</header>
-<section class="beatpack-info">
-  <img src="beatpack-cover.jpg" alt="BeatPack Cover">
-  <div class="details">
-    <h2>What's Included</h2>
-    <ul>
-      <li>20 High-Quality Music Beats</li>
-      <li>Various Genres: Hip Hop, Pop, Electronic, and more</li>
-      <li>Royalty-Free License</li>
-      <li>Instant Download</li>
-    </ul>
-    <p class="price">$49.99</p>
-    <button class="buy-button">Buy Now</button>
-  </div>
-</section>
-<footer>
-  <p>&copy; 2023 BeatPack. All rights reserved.</p>
-</footer>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Calculator Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      #calculator {
+        width: 100%;
+        text-align: center;
+      }
+
+      #rectangles {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .rectangle-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .rectangle {
+        width: 150px;
+        height: 50px;
+        margin: 5px;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      #output {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <h2>Calculator</h2>
+      <input type="text" id="inputNumber" placeholder="Enter a quantity" pattern="[0-9]*" oninput="checkInput()">
+    </div>
+    <div id="rectangles">
+      <div class="rectangle-container">
+        <div class="rectangle" onclick="calculateTotal('Taco/Gordita de carne', 1)">Taco/Gordita de carne</div>
+        <div class="rectangle" onclick="calculateTotal('Gorditas de guiso', 2)">Gorditas de guiso</div>
+      </div>
+      <div class="rectangle-container">
+        <div class="rectangle" onclick="calculateTotal('Bocol de carne', 3)">Bocol de carne</div>
+        <div class="rectangle" onclick="calculateTotal('Bocol de guiso', 4)">Bocol de guiso</div>
+      </div>
+      <div class="rectangle-container">
+        <div class="rectangle" onclick="calculateTotal('Torta/enchiladas', 5)">Torta/enchiladas</div>
+        <div class="rectangle" onclick="calculateTotal('Pemoles/rosquitas/campechanas', 6)">Pemoles/rosquitas/campechanas</div>
+      </div>
+      <div class="rectangle-container">
+        <div class="rectangle" onclick="calculateTotal('Refrescos/avia', 7)">Refrescos/avia</div>
+        <div class="rectangle" onclick="calculateTotal('A. Natural/cafe', 8)">A. Natural/cafe</div>
+      </div>
+    </div>
+    <div id="output">
+      <h2>Output</h2>
+      <ul id="outputList"></ul>
+      <p id="total">Total: 0</p>
+    </div>
+    <script>
+      let total = 0;
+
+      function calculateTotal(itemName, multiplier) {
+        const inputNumber = parseFloat(document.getElementById('inputNumber').value);
+        const itemTotal = inputNumber * multiplier;
+        total += itemTotal;
+        const outputList = document.getElementById('outputList');
+        const listItem = document.createElement('li');
+        listItem.textContent = $ {
+          itemName
+        }: $ {
+          itemTotal
+        };
+        outputList.appendChild(listItem);
+        document.getElementById('total').textContent = Total: $ {
+          total.toFixed(2)
+        };
+      }
+
+      function checkInput() {
+        const inputNumber = document.getElementById('inputNumber');
+        if (inputNumber.value < 0) {
+          inputNumber.value = 0;
+        }
+      }
+    </script>
+  </body>
 </html>
