@@ -2,12 +2,7 @@ body {
     background-color: #121212;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    display: flex;
+    margin: 
     flex-direction: column;
     align-items: center;
     padding: 20px;
