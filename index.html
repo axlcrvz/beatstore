@@ -1,102 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Calculator Website</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Brands</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#mr-taco">Mr. Taco</a></li>
+            <li><a href="#recording-studio">Recording Studio</a></li>
+            <li><a href="#reselling-brand">Reselling Brand</a></li>
+            <li><a href="#beats">Beats</a></li>
+            <li><a href="#produced-songs">Produced Songs</a></li>
+        </ul>
+    </nav>
 
-      #calculator {
-        width: 100%;
-        text-align: center;
-      }
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my brands, businesses, and services.</p>
+        </div>
+    </section>
 
-      #rectangles {
-        text-align: center;
-        margin-top: 20px;
-      }
+    <!-- Mr. Taco Section -->
+    <section id="mr-taco">
+        <h2>Mr. Taco</h2>
+        <div class="gallery">
+            <img src="images/mr-taco-1.jpg" alt="Mr. Taco Image 1">
+            <img src="images/mr-taco-2.jpg" alt="Mr. Taco Image 2">
+        </div>
+        <p>Experience the best tacos in town. Visit our restaurant for an unforgettable culinary experience.</p>
+        <a href="#home" class="go-back">Go Back</a>
+    </section>
 
-      .rectangle-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+    <!-- Recording Studio Section -->
+    <section id="recording-studio">
+        <h2>Recording Studio</h2>
+        <div class="gallery">
+            <img src="images/studio-1.jpg" alt="Studio Image 1">
+            <img src="images/studio-2.jpg" alt="Studio Image 2">
+        </div>
+        <p>State-of-the-art recording studio. Perfect for artists looking for high-quality sound.</p>
+        <a href="#home" class="go-back">Go Back</a>
+    </section>
 
-      .rectangle {
-        width: 150px;
-        height: 50px;
-        margin: 5px;
-        text-align: center;
-        line-height: 50px;
-        cursor: pointer;
-        border: 1px solid #ccc;
-        overflow: hidden;
-        white-space: nowrap;
-      }
+    <!-- Reselling Brand Section -->
+    <section id="reselling-brand">
+        <h2>Reselling Brand</h2>
+        <div class="gallery">
+            <img src="images/resell-1.jpg" alt="Resell Brand Image 1">
+            <img src="images/resell-2.jpg" alt="Resell Brand Image 2">
+        </div>
+        <p>High-end clothing resale. Find the best deals on top fashion brands.</p>
+        <a href="#home" class="go-back">Go Back</a>
+    </section>
 
-      #output {
-        margin-top: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="calculator">
-      <h2>Calculator</h2>
-      <input type="text" id="inputNumber" placeholder="Enter a quantity" pattern="[0-9]*" oninput="checkInput()">
-    </div>
-    <div id="rectangles">
-      <div class="rectangle-container">
-        <div class="rectangle" onclick="calculateTotal('Taco/Gordita de carne', 1)">Taco/Gordita de carne</div>
-        <div class="rectangle" onclick="calculateTotal('Gorditas de guiso', 2)">Gorditas de guiso</div>
-      </div>
-      <div class="rectangle-container">
-        <div class="rectangle" onclick="calculateTotal('Bocol de carne', 3)">Bocol de carne</div>
-        <div class="rectangle" onclick="calculateTotal('Bocol de guiso', 4)">Bocol de guiso</div>
-      </div>
-      <div class="rectangle-container">
-        <div class="rectangle" onclick="calculateTotal('Torta/enchiladas', 5)">Torta/enchiladas</div>
-        <div class="rectangle" onclick="calculateTotal('Pemoles/rosquitas/campechanas', 6)">Pemoles/rosquitas/campechanas</div>
-      </div>
-      <div class="rectangle-container">
-        <div class="rectangle" onclick="calculateTotal('Refrescos/avia', 7)">Refrescos/avia</div>
-        <div class="rectangle" onclick="calculateTotal('A. Natural/cafe', 8)">A. Natural/cafe</div>
-      </div>
-    </div>
-    <div id="output">
-      <h2>Output</h2>
-      <ul id="outputList"></ul>
-      <p id="total">Total: 0</p>
-    </div>
-    <script>
-      let total = 0;
+    <!-- Beats Section -->
+    <section id="beats">
+        <h2>Beats</h2>
+        <div class="audio-gallery">
+            <div class="audio-item">
+                <audio controls>
+                    <source src="audio/beat-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Beat Title 1</p>
+            </div>
+            <div class="audio-item">
+                <audio controls>
+                    <source src="audio/beat-2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Beat Title 2</p>
+            </div>
+        </div>
+        <a href="#home" class="go-back">Go Back</a>
+    </section>
 
-      function calculateTotal(itemName, multiplier) {
-        const inputNumber = parseFloat(document.getElementById('inputNumber').value);
-        const itemTotal = inputNumber * multiplier;
-        total += itemTotal;
-        const outputList = document.getElementById('outputList');
-        const listItem = document.createElement('li');
-        listItem.textContent = $ {
-          itemName
-        }: $ {
-          itemTotal
-        };
-        outputList.appendChild(listItem);
-        document.getElementById('total').textContent = Total: $ {
-          total.toFixed(2)
-        };
-      }
+    <!-- Produced Songs Section -->
+    <section id="produced-songs">
+        <h2>Produced Songs</h2>
+        <div class="audio-gallery">
+            <div class="audio-item">
+                <audio controls>
+                    <source src="audio/song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Song Title 1</p>
+            </div>
+            <div class="audio-item">
+                <audio controls>
+                    <source src="audio/song-2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Song Title 2</p>
+            </div>
+        </div>
+        <a href="#home" class="go-back">Go Back</a>
+    </section>
 
-      function checkInput() {
-        const inputNumber = document.getElementById('inputNumber');
-        if (inputNumber.value < 0) {
-          inputNumber.value = 0;
-        }
-      }
-    </script>
-  </body>
+    <!-- Footer -->
+    <footer>
+        <p>Contact: your-email@example.com</p>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
 </html>
