@@ -1,125 +1,72 @@
-/* Reset and Base Styles */
-* {
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    background-color: #121212;
-    line-height: 1.6;
-}
-
-a {
-    color: #1DB954;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Navigation */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 1rem 0;
-    z-index: 1000;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #1DB954;
-}
-
-/* Sections */
-section {
-    padding: 4rem 2rem;
-    min-height: 100vh;
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 20px;
 }
 
-.hero {
+.profile {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.profile h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.profile p {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-/* Gallery */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin: 2rem 0;
+.profile a {
+    color: #1e90ff;
+    text-decoration: none;
 }
 
-.gallery img {
+.section {
     width: 100%;
-    border-radius: 0.5rem;
-    transition: transform 0.3s;
+    max-width: 600px;
+    margin: 20px 0;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
+.section h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
 }
 
-/* Audio Gallery */
-.audio-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin: 2rem 0;
-    text-align: center;
+.section ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.audio-item p {
-    margin-top: 0.5rem;
+.section ul li {
+    margin: 10px 0;
 }
 
-/* Go Back Button */
-.go-back {
-    margin-top: 2rem;
-    padding: 0.5rem 1rem;
-    background: #1DB954;
-    border-radius: 0.3rem;
-    transition: background 0.3s;
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.go-back:hover {
-    background: #1a9e45;
+.social-media a {
+    margin: 0 10px;
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
-/* Footer */
-footer {
-    padding: 2rem;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
+.social-media a:hover {
+    text-decoration: underline;
 }
