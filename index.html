@@ -3,175 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrategias Digitales a tu Medida | @axlcrvz</title>
+    <title>Estrategias Digitales a tu Medida</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
             background-color: #121212;
-            color: #f5f5f5;
-            text-align: center;
-            padding: 20px;
+            color: #e0e0e0;
         }
-
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 1200px;
+            margin: auto;
             padding: 20px;
-            background-color: #1f1f1f;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            text-align: left;
         }
-
-        .section-title {
-            font-size: 28px;
-            color: #4CAF50;
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 20px;
         }
-
-        .service-level {
-            margin-bottom: 30px;
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
         }
-
-        .service-level h3 {
+        .profile h2 {
+            margin: 0;
             font-size: 24px;
-            color: #4CAF50;
-            margin-bottom: 10px;
+            color: #f5f5f5;
         }
-
-        .service-level p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 10px;
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
         }
-
-        .service-level .highlight {
-            color: #FFD700;
-            font-weight: bold;
-        }
-
-        .service-level .price {
-            font-size: 22px;
-            color: #FFA500;
+        .header p {
+            font-size: 24px;
             margin-top: 10px;
         }
-
-        .socials {
-            margin-top: 30px;
+        .section-title {
+            font-size: 32px;
+            margin: 40px 0 20px;
+            color: #f5f5f5;
+            text-align: center;
+            text-transform: uppercase;
         }
-
-        .socials a {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 25px;
+        .service {
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            padding: 30px;
+            border: 1px solid #333;
+        }
+        .service-title {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #f5f5f5;
+            text-align: center;
+        }
+        .service-description {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .service-price {
+            font-size: 22px;
+            font-weight: bold;
+            color: #f5f5f5;
+            text-align: center;
+        }
+        .cta-button {
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 40px auto;
+            padding: 15px;
+            text-align: center;
             background-color: #333;
             color: #f5f5f5;
             text-decoration: none;
             border-radius: 12px;
-            font-size: 18px;
+            font-size: 24px;
+            font-weight: bold;
             border: 1px solid #f5f5f5;
-            transition: background-color 0.3s ease;
         }
-
-        .socials a:hover {
+        .cta-button:hover {
             background-color: #444;
+        }
+        .socials .social-button {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: #333;
+    color: #f5f5f5;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 20px;
+    border: 1px solid #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+.socials .social-button:hover {
+    background-color: #444;
+}
+        .testimonials {
+            margin: 40px 0;
+        }
+        .testimonial {
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+        }
+        .testimonial p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .testimonial h4 {
+            font-size: 22px;
+            margin: 0;
+            color: #f5f5f5;
+            text-align: center;
+        }
+        .highlight {
+            background-color: #333;
+            color: #f5f5f5;
+            padding: 0 5px;
+            border-radius: 3px;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .socials {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+        }
+        .socials h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .socials a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 20px;
+            color: #f5f5f5;
+            text-decoration: none;
+        }
+        .socials a:hover {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Profile Picture/Logo and Name -->
-        <div class="profile">
-            <img src="path/to/profile-picture.jpg" alt="Profile Picture">
-            <p>@axlcrvz</p>
-        </div>
-
-        <!-- Service Levels -->
-        <div class="service-level">
-            <h3>Estrategias Digitales a tu Medida</h3>
-            <div class="service">
-                <p><strong>Nivel Básico</strong></p>
-                <p>Consulta inicial y recomendaciones básicas</p>
-                <p class="price">$350</p>
+        <!-- Header Section -->
+        <header class="header">
+            <!-- Profile Section -->
+            <div class="profile">
+                <img src="beatpack-cover..jpg" alt="Profile Picture">
+                <h2>@axlcrvz</h2>
             </div>
-        </div>
+            <h1>Estrategias Digitales a tu Medida</h1>
+            <p><span class="highlight">Impulsa</span> tu negocio al siguiente nivel con nuestras <span class="underline">soluciones personalizadas</span>.</p>
+        </header>
 
-        <div class="service-level">
-            <h3>Nivel Intermedio</h3>
+        <!-- Benefits Section -->
+        <section>
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
             <div class="service">
-                <p>Plan de marketing digital personalizado, análisis de competencia</p>
-                <p class="price">$700</p>
+                <h3 class="service-title">Resultados Comprobados</h3>
+                <p class="service-description"><span class="bold">Nuestros clientes</span> han visto un incremento significativo en sus métricas clave.</p>
             </div>
-        </div>
-
-        <div class="service-level">
-            <h3>Nivel Avanzado</h3>
             <div class="service">
-                <p>Implementación de estrategias, seguimiento mensual y optimización</p>
-                <p class="price">$1,200</p>
+                <h3 class="service-title">Estrategias Personalizadas</h3>
+                <p class="service-description">Cada plan está hecho a la medida de las <span class="bold">necesidades únicas</span> de tu negocio.</p>
             </div>
-        </div>
-
-        <div class="service-level">
-            <h3>Nivel Premium</h3>
             <div class="service">
-                <p>Estrategias avanzadas y campañas pagadas, análisis y optimización</p>
-                <p class="price">$2,000</p>
+                <h3 class="service-title">Soporte Continuo</h3>
+                <p class="service-description">Te acompañamos en cada paso del camino para asegurar tu éxito.</p>
             </div>
-        </div>
-
-        <div class="service-level">
-            <h3>Tu Presencia Online Simplificada</h3>
-            <div class="service">
-                <p><strong>Nivel Básico</strong></p>
-                <p>Creación de una página web básica</p>
-                <p class="price">$350</p>
-            </div>
-        </div>
-
-        <div class="service-level">
-            <h3>Nivel Intermedio</h3>
-            <div class="service">
-                <p>Diseño personalizado de página web</p>
-                <p class="price">$600</p>
-            </div>
-        </div>
-
-        <div class="service-level">
-            <h3>Nivel Avanzado</h3>
-            <div class="service">
-                <p>Integración con herramientas de análisis y seguimiento</p>
-                <p class="price">$900</p>
-            </div>
-        </div>
-
-        <div class="service-level">
-            <h3>Ritmos que Elevan tu Marca</h3>
-            <div class="service">
-                <p><strong>Nivel Básico</strong></p>
-                <p>Producción de un beat estándar</p>
-                <p class="price">$350</p>
-            </div>
-        </div>
-
-        <div class="service-level">
-            <h3>Nivel Premium</h3>
-            <div class="service">
-                <p>Producción de un beat con 1 revisión incluida</p>
-                <p class="price">$600</p>
-            </div>
-        </div>
-
-        <!-- Social Media Section -->
-        <section class="socials">
-            <h2>Síguenos en Redes Sociales</h2>
-            <a href="https://www.instagram.com/axlcrvz" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/axlcrvz" target="_blank">Facebook</a>
-            <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
-            <a href="https://www.threads.net/axlcrvz" target="_blank">Threads</a>
-            <a href="https://www.linkedin.com/in/axlcrvz" target="_blank">LinkedIn</a>
-            <a href="https://www.tiktok.com/@axlcrvz" target="_blank">TikTok</a>
         </section>
+
+        <!-- Services Section -->
+        <section>
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <!-- Digital Strategies Section -->
+            <div class="service">
+                <h3 class="service-title">Estrategias Digitales</h3>
+                <div class="service-description">
+                    <h4>Nivel Básico</h4>
+                    <p>Consulta inicial y recomendaciones básicas</p>
+                    <p class="service-price">Precio: $350</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Intermedio</h4>
+                    <p>Plan de marketing digital personalizado, análisis de competencia</p>
+                    <p class="service-price">Precio: $700</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Avanzado</h4>
+                    <p>Implementación de estrategias, seguimiento mensual y optimización</p>
+                    <p class="service-price">Precio: $1,200</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Premium</h4>
+                    <p>Estrategias avanzadas y campañas pagadas, análisis y optimización</p>
+                    <p class="service-price">Precio: $2,000</p>
+                </div>
+            </div>
+
+            <!-- Online Presence Section -->
+            <div class="service">
+                <h3 class="service-title">Tu Presencia Online Simplificada</h3>
+                <div class="service-description">
+                    <h4>Nivel Básico</h4>
+                    <p>Creación de una página web básica</p>
+                    <p class="service-price">Precio: $350</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Intermedio</h>
+                        <p>Diseño personalizado de página web</p>
+                    <p class="service-price">Precio: $600</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Avanzado</h4>
+                    <p>Integración con herramientas de análisis y seguimiento</p>
+                    <p class="service-price">Precio: $900</p>
+                </div>
+            </div>
+
+            <!-- Brand Boosting Section -->
+            <div class="service">
+                <h3 class="service-title">Ritmos que Elevan tu Marca</h3>
+                <div class="service-description">
+                    <h4>Nivel Básico</h4>
+                    <p>Producción de un beat estándar</p>
+                    <p class="service-price">Precio: $350</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Premium</h4>
+                    <p>Producción de un beat con 1 revisión incluida</p>
+                    <p class="service-price">Precio: $600</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section>
+            <h2 class="section-title">¡Contáctanos Hoy!</h2>
+            <a href="mailto:info@tuempresa.com" class="cta-button">¡Empezar Ahora!</a>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2 class="section-title">Testimonios</h2>
+            <div class="testimonial">
+                <p>"Gracias a sus estrategias, mi negocio ha crecido un <span class="highlight">200%</span> en solo 3 meses."</p>
+                <h4>- Cliente Satisfecho</h4>
+            </div>
+            <div class="testimonial">
+                <p>"La mejor inversión que he hecho. Su soporte es <span class="highlight">increíble</span> y siempre están ahí para ayudar."</p>
+                <h4>- Emprendedor Feliz</h4>
+            </div>
+        </section>
+
+<!-- Social Media Section -->
+<section class="socials">
+    <h2>Síguenos en Redes Sociales</h2>
+    <a href="https://www.instagram.com/axlcrvz" target="_blank" class="social-button">Instagram</a>
+    <a href="https://www.facebook.com/axlcrvz" target="_blank" class="social-button">Facebook</a>
+    <a href="https://wa.me/1234567890" target="_blank" class="social-button">WhatsApp</a>
+    <a href="https://www.threads.net/axlcrvz" target="_blank" class="social-button">Threads</a>
+    <a href="https://www.linkedin.com/in/axlcrvz" target="_blank" class="social-button">LinkedIn</a>
+    <a href="https://www.tiktok.com/@axlcrvz" target="_blank" class="social-button">TikTok</a>
+</section>
     </div>
 </body>
 </html>
