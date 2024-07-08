@@ -1,185 +1,117 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servicios Digitales y Más - Tu Solución Integral</title>
-<style>
-    /* Basic CSS for layout and styling */
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-        color: #333;
-    }
-    header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 0;
-        text-align: center;
-    }
-    nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    nav a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 15px;
-        transition: color 0.3s ease;
-    }
-    nav a:hover {
-        color: #ff8c00; /* Change hover color */
-    }
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        width: 80%;
-        margin: auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-    }
-    .services {
-        margin-top: 20px;
-    }
-    .service {
-        margin-bottom: 20px;
-    }
-    footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        margin-top: 20px; /* Add margin to separate from contact section */
-    }
-    .contact {
-        padding: 20px;
-    }
-    .links {
-        margin-top: 20px;
-    }
-    .links ul {
-        list-style-type: none;
-        padding: 0;
-        text-align: center;
-    }
-    .links ul li {
-        margin-bottom: 10px;
-    }
-    .links ul li a {
-        display: block;
-        padding: 10px;
-        background-color: #ff8c00;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-    .links ul li a:hover {
-        background-color: #333;
-    }
-
-    /* Media query for smaller screens (phones) */
-    @media (max-width: 768px) {
-        .container {
-            width: 90%;
-            padding: 15px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Business Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Very dark mode background */
+            color: #ffffff; /* White text */
+            margin: 0;
+            padding: 0;
         }
-    }
-</style>
+        /* Define your CSS styles for sections, headers, etc. */
+        .section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .section h2 {
+            color: #ff4d4d; /* Red accent color */
+        }
+        /* Additional styles for specific sections */
+        #services {
+            background-color: #333333; /* Dark background for services section */
+        }
+        /* Customize as per your design requirements */
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#services">Estrategias Digitales</a></li>
+                <li><a href="#online-presence">Tu Presencia Online</a></li>
+                <li><a href="#brand-beats">Ritmos que Elevan</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Servicios Digitales y Más</h1>
-    <nav>
-        <a href="#home">Inicio</a>
-        <a href="#services">Servicios</a>
-        <a href="#contact">Contacto</a>
-    </nav>
-</header>
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Estrategias Digitales a tu Medida</h2>
+            <div class="level">
+                <div class="item">
+                    <h3>Nivel Básico</h3>
+                    <p>Consulta inicial y recomendaciones básicas</p>
+                    <p>Precio: $350</p>
+                </div>
+                <div class="item">
+                    <h3>Nivel Intermedio</h3>
+                    <p>Plan de marketing digital personalizado, análisis de competencia</p>
+                    <p>Precio: $700</p>
+                </div>
+                <div class="item">
+                    <h3>Nivel Avanzado</h3>
+                    <p>Implementación de estrategias, seguimiento mensual y optimización</p>
+                    <p>Precio: $1,200</p>
+                </div>
+                <div class="item">
+                    <h3>Nivel Premium</h3>
+                    <p>Estrategias avanzadas y campañas pagadas, análisis y optimización</p>
+                    <p>Precio: $2,000</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="home" class="container">
-    <h2>Bienvenido a nuestro sitio web</h2>
-    <p>Somos una empresa dedicada a ofrecer soluciones digitales personalizadas para tu negocio.</p>
-</section>
+    <section id="online-presence" class="section">
+        <div class="container">
+            <h2>Tu Presencia Online Simplificada</h2>
+            <div class="level">
+                <div class="item">
+                    <h3>Nivel Básico</h3>
+                    <p>Creación de una página web básica</p>
+                    <p>Precio: $350</p>
+                </div>
+                <div class="item">
+                    <h3>Nivel Intermedio</h3>
+                    <p>Diseño personalizado de página web</p>
+                    <p>Precio: $600</p>
+                </div>
+                <div class="item">
+                    <h3>Nivel Avanzado</h3>
+                    <p>Integración con herramientas de análisis y seguimiento</p>
+                    <p>Precio: $900</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="services" class="container services">
-    <h2>Nuestros Servicios</h2>
-    
-    <div class="service">
-        <h3>Estrategias Digitales a tu Medida</h3>
-        <ul>
-            <li>
-                <strong>Nivel Básico:</strong> Consulta inicial para evaluar la situación actual del negocio y recomendaciones básicas. Precio: $350.
-            </li>
-            <li>
-                <strong>Nivel Intermedio:</strong> Plan de marketing digital personalizado, incluyendo análisis de competencia y recomendaciones detalladas de redes sociales y campañas pagadas. Precio: $700.
-            </li>
-            <li>
-                <strong>Nivel Avanzado:</strong> Implementación de estrategias de marketing digital, seguimiento mensual y optimización continua. Precio: $1,200.
-            </li>
-            <li>
-                <strong>Nivel Premium:</strong> Estrategias avanzadas y campañas pagadas, incluyendo análisis de resultados y optimización. Precio: $2,000.
-            </li>
-        </ul>
-    </div>
+    <section id="brand-beats" class="section">
+        <div class="container">
+            <h2>Ritmos que Elevan tu Marca</h2>
+            <div class="level">
+                <div class="item">
+                    <h3>Nivel Básico</h3>
+                    <p>Producción de un beat estándar</p>
+                    <p>Precio: $350</p>
+                </div>
+                <div class="item">
+                    <h3>Nivel Premium</h3>
+                    <p>Producción de un beat con 1 revisión incluida</p>
+                    <p>Precio: $600</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="service">
-        <h3>Tu Presencia Online Simplificada</h3>
-        <ul>
-            <li>
-                <strong>Nivel Básico:</strong> Creación de una página web básica con enlaces a servicios y productos. Precio: $350.
-            </li>
-            <li>
-                <strong>Nivel Intermedio:</strong> Diseño personalizado: $600.
-            </li>
-            <li>
-                <strong>Nivel Avanzado:</strong> Integración con herramientas de análisis y seguimiento de tráfico. Precio: $900.
-            </li>
-        </ul>
-    </div>
+    <!-- Add additional sections or content as needed -->
 
-    <div class="service">
-        <h3>Ritmos que Elevan tu Marca</h3>
-        <ul>
-            <li>
-                <strong>Nivel Básico:</strong> Un beat estándar. Precio: $350.
-            </li>
-            <li>
-                <strong>Nivel Premium:</strong> Producción de un beat con 1 revisión incluida. Precio: $600.
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section id="links" class="container links">
-    <h2>Encuéntranos en</h2>
-    <ul>
-        <li><a href="https://www.instagram.com/serviciosdigitalesymas/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.facebook.com/serviciosdigitalesymas/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.linkedin.com/company/serviciosdigitalesymas/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://twitter.com/serviciosdigitalesymas/" target="_blank">Twitter</a></li>
-        <!-- Add more links as needed -->
-    </ul>
-</section>
-
-<section id="contact" class="container contact">
-    <h2>Contacto</h2>
-    <p>Para más información o consultas, contáctanos:</p>
-    <p>Email: info@serviciosdigitalesymas.com</p>
-    <p>Teléfono: +52 55 1234 5678</p>
-</section>
-
-<footer>
-    <p>&copy; 2024 Servicios Digitales y Más. Todos los derechos reservados.</p>
-</footer>
-
+    <footer>
+        <p>Síguenos en Instagram: <a href="https://www.instagram.com/axlcrvz" target="_blank">@axlcrvz</a></p>
+        <p>&copy; 2024 Tu Empresa | Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
