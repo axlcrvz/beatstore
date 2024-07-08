@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Sitio de Servicios Digitales</title>
+    <title>Estrategias Digitales a tu Medida</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,6 +18,24 @@
             margin: auto;
             padding: 20px;
         }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #007bff;
+            color: #fff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin: 40px 0 20px;
+        }
         .service {
             background-color: #fff;
             border-radius: 8px;
@@ -25,84 +43,157 @@
             padding: 20px;
         }
         .service-title {
-            font-size: 24px;
+            font-size: 20px;
             margin-bottom: 10px;
-            color: #333;
         }
         .service-description {
             font-size: 16px;
             margin-bottom: 15px;
         }
         .service-price {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             color: #007bff;
+        }
+        .cta-button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 15px;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        .testimonials {
+            margin: 40px 0;
+        }
+        .testimonial {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .testimonial p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .testimonial h4 {
+            font-size: 18px;
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Estrategias Digitales a tu Medida</h1>
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Estrategias Digitales a tu Medida</h1>
+            <p>Impulsa tu negocio al siguiente nivel con nuestras soluciones personalizadas.</p>
+        </header>
 
-        <!-- Digital Strategies Section -->
-        <div class="service">
-            <h2 class="service-title">Estrategias Digitales</h2>
-            <div class="service-description">
-                <h3>Nivel Básico</h3>
-                <p>Consulta inicial y recomendaciones básicas</p>
-                <p><strong>Precio: $350</strong></p>
+        <!-- Benefits Section -->
+        <section>
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
+            <div class="service">
+                <h3 class="service-title">Resultados Comprobados</h3>
+                <p class="service-description">Nuestros clientes han visto un incremento significativo en sus métricas clave.</p>
             </div>
-            <div class="service-description">
-                <h3>Nivel Intermedio</h3>
-                <p>Plan de marketing digital personalizado, análisis de competencia</p>
-                <p><strong>Precio: $700</strong></p>
+            <div class="service">
+                <h3 class="service-title">Estrategias Personalizadas</h3>
+                <p class="service-description">Cada plan está hecho a la medida de las necesidades únicas de tu negocio.</p>
             </div>
-            <div class="service-description">
-                <h3>Nivel Avanzado</h3>
-                <p>Implementación de estrategias, seguimiento mensual y optimización</p>
-                <p><strong>Precio: $1,200</strong></p>
+            <div class="service">
+                <h3 class="service-title">Soporte Continuo</h3>
+                <p class="service-description">Te acompañamos en cada paso del camino para asegurar tu éxito.</p>
             </div>
-            <div class="service-description">
-                <h3>Nivel Premium</h3>
-                <p>Estrategias avanzadas y campañas pagadas, análisis y optimización</p>
-                <p><strong>Precio: $2,000</strong></p>
-            </div>
-        </div>
+        </section>
 
-        <!-- Online Presence Section -->
-        <div class="service">
-            <h2 class="service-title">Tu Presencia Online Simplificada</h2>
-            <div class="service-description">
-                <h3>Nivel Básico</h3>
-                <p>Creación de una página web básica</p>
-                <p><strong>Precio: $350</strong></p>
+        <!-- Services Section -->
+        <section>
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <!-- Digital Strategies Section -->
+            <div class="service">
+                <h3 class="service-title">Estrategias Digitales</h3>
+                <div class="service-description">
+                    <h4>Nivel Básico</h4>
+                    <p>Consulta inicial y recomendaciones básicas</p>
+                    <p class="service-price">Precio: $350</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Intermedio</h4>
+                    <p>Plan de marketing digital personalizado, análisis de competencia</p>
+                    <p class="service-price">Precio: $700</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Avanzado</h4>
+                    <p>Implementación de estrategias, seguimiento mensual y optimización</p>
+                    <p class="service-price">Precio: $1,200</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Premium</h4>
+                    <p>Estrategias avanzadas y campañas pagadas, análisis y optimización</p>
+                    <p class="service-price">Precio: $2,000</p>
+                </div>
             </div>
-            <div class="service-description">
-                <h3>Nivel Intermedio</h3>
-                <p>Diseño personalizado de página web</p>
-                <p><strong>Precio: $600</strong></p>
-            </div>
-            <div class="service-description">
-                <h3>Nivel Avanzado</h3>
-                <p>Integración con herramientas de análisis y seguimiento</p>
-                <p><strong>Precio: $900</strong></p>
-            </div>
-        </div>
 
-        <!-- Brand Boosting Section -->
-        <div class="service">
-            <h2 class="service-title">Ritmos que Elevan tu Marca</h2>
-            <div class="service-description">
-                <h3>Nivel Básico</h3>
-                <p>Producción de un beat estándar</p>
-                <p><strong>Precio: $350</strong></p>
+            <!-- Online Presence Section -->
+            <div class="service">
+                <h3 class="service-title">Tu Presencia Online Simplificada</h3>
+                <div class="service-description">
+                    <h4>Nivel Básico</h4>
+                    <p>Creación de una página web básica</p>
+                    <p class="service-price">Precio: $350</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Intermedio</h4>
+                    <p>Diseño personalizado de página web</p>
+                    <p class="service-price">Precio: $600</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Avanzado</h4>
+                    <p>Integración con herramientas de análisis y seguimiento</p>
+                    <p class="service-price">Precio: $900</p>
+                </div>
             </div>
-            <div class="service-description">
-                <h3>Nivel Premium</h3>
-                <p>Producción de un beat con 1 revisión incluida</p>
-                <p><strong>Precio: $600</strong></p>
+
+            <!-- Brand Boosting Section -->
+            <div class="service">
+                <h3 class="service-title">Ritmos que Elevan tu Marca</h3>
+                <div class="service-description">
+                    <h4>Nivel Básico</h4>
+                    <p>Producción de un beat estándar</p>
+                    <p class="service-price">Precio: $350</p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Premium</h4>
+                    <p>Producción de un beat con 1 revisión incluida</p>
+                    <p class="service-price">Precio: $600</p>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section>
+            <h2 class="section-title">¡Contáctanos Hoy!</h2>
+            <a href="mailto:info@tuempresa.com" class="cta-button">Solicita tu Consulta Gratis</a>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2 class="section-title">Lo que Dicen Nuestros Clientes</h2>
+            <div class="testimonial">
+                <p>"Gracias a sus estrategias, mi negocio ha crecido exponencialmente. ¡Altamente recomendados!"</p>
+                <h4>- Juan Pérez</h4>
+            </div>
+            <div class="testimonial">
+                <p>"La atención personalizada y los resultados obtenidos son simplemente impresionantes."</p>
+                <h4>- María Gómez</h4>
+            </div>
+        </section>
     </div>
 </body>
 </html>
