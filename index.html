@@ -101,44 +101,46 @@
             background-color: #444;
         }
         .socials .social-button {
-    display: block;
-    width: 80%;
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 15px;
-    text-align: center;
-    background-color: #333;
-    color: #f5f5f5;
-    text-decoration: none;
-    border-radius: 12px;
-    font-size: 20px;
-    border: 1px solid #f5f5f5;
-    transition: background-color 0.3s ease;
-}
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 15px;
+            text-align: center;
+            background-color: #333;
+            color: #f5f5f5;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 20px;
+            border: 1px solid #f5f5f5;
+            transition: background-color 0.3s ease;
+        }
 
-.socials .social-button:hover {
-    background-color: #444;
-}
+        .socials .social-button:hover {
+            background-color: #444;
+        }
         .testimonials {
             margin: 40px 0;
         }
         .testimonial {
+            display: flex;
+            align-items: center;
             background-color: #1a1a1a;
             border-radius: 12px;
-            padding: 30px;
+            padding: 20px;
             margin-bottom: 20px;
             border: 1px solid #333;
         }
-        .testimonial p {
-            font-size: 18px;
-            margin-bottom: 10px;
-            text-align: center;
+        .testimonial img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
         }
         .testimonial h4 {
             font-size: 22px;
             margin: 0;
             color: #f5f5f5;
-            text-align: center;
         }
         .highlight {
             background-color: #333;
@@ -179,10 +181,10 @@
 </head>
 <body>
     <div class="container">
-            <!-- Profile Section -->
-            <div class="profile">
-                <h2>@axlcrvz</h2>
-                </div>
+        <!-- Profile Section -->
+        <div class="profile">
+            <h2>@axlcrvz</h2>
+        </div>
         <!-- Header Section -->
         <header class="header">
             <h1>Estrategias Digitales a tu Medida</h1>
@@ -253,19 +255,25 @@
                     <p class="service-price"><span class="highlight">$900</span></p>
                 </div>
             </div>
-
-            <!-- Brand Boosting Section -->
+                    <!-- Brand Optimization Section -->
+        <section>
+            <h2 class="section-title">Optimización de Marca</h2>
             <div class="service">
-                <h3 class="service-title">Ritmos que Elevan tu Marca</h3>
+                <h3 class="service-title">Impulsa tu Marca</h3>
                 <div class="service-description">
                     <h4>Nivel Básico</h4>
-                    <p>Beat estándar</p>
-                    <p class="service-price"><span class="highlight">$350</span></p>
+                    <p>Estrategia de branding inicial y recomendaciones</p>
+                    <p class="service-price"><span class="highlight">$300</span></p>
                 </div>
                 <div class="service-description">
-                    <h4>Nivel Premium</h4>
-                    <p>Producción de un beat personalizado con 1 revisión incluida</p>
+                    <h4>Nivel Intermedio</h4>
+                    <p>Desarrollo de identidad de marca y diseño de logo</p>
                     <p class="service-price"><span class="highlight">$600</span></p>
+                </div>
+                <div class="service-description">
+                    <h4>Nivel Avanzado</h4>
+                    <p>Implementación completa de estrategias y análisis continuo</p>
+                    <p class="service-price"><span class="highlight">$800</span></p>
                 </div>
             </div>
         </section>
@@ -276,32 +284,39 @@
             <a href="mailto:info@tuempresa.com" class="cta-button">WhatsApp</a>
         </section>
 
-        <!-- Testimonials Section -->
-        <section class="testimonials">
-            <h2 class="section-title">Clientes</h2>
-            <div class="testimonial">
-                <p>"Gracias a sus estrategias, mi negocio ha crecido un <span class="highlight">200%</span> en solo 3 meses."</p>
-                <h4>- Cliente Satisfecho</h4>
-            </div>
-            <div class="testimonial">
-                <p>"La mejor inversión que he hecho. Su soporte es <span class="highlight">increíble</span> y siempre están ahí para ayudar."</p>
-                <h4>- Emprendedor Feliz</h4>
+        <!-- Satisfied Brands Section -->
+        <section>
+            <h2 class="section-title">Marcas Satisfechas</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="ruta_a_la_foto1.jpg" alt="Testimonial 1" class="profile-img">
+                    <h4>Juan Pérez</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="ruta_a_la_foto2.jpg" alt="Testimonial 2" class="profile-img">
+                    <h4>Maria López</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="ruta_a_la_foto3.jpg" alt="Testimonial 3" class="profile-img">
+                    <h4>Carlos Sánchez</h4>
+                </div>
             </div>
         </section>
 
-<!-- Social Media Section -->
- <section>
+        <!-- Social Media Section -->
+        <section>
             <h2 class="section-title">REDES SOCIALES</h2>
         </section>
-<section class="socials">
-    <a href="https://www.instagram.com/axlcrvz" target="_blank" class="social-button">Instagram</a>
-    <a href="https://www.facebook.com/axlcrvz" target="_blank" class="social-button">Facebook</a>
-    <a href="https://wa.me/1234567890" target="_blank" class="social-button">WhatsApp</a>
-    <a href="https://www.threads.net/axlcrvz" target="_blank" class="social-button">Threads</a>
-    <a href="https://www.linkedin.com/in/axlcrvz" target="_blank" class="social-button">LinkedIn</a>
-    <a href="https://www.tiktok.com/@axlcrvz" target="_blank" class="social-button">TikTok</a>
-</section>
+        <section class="socials">
+            <a href="https://www.instagram.com/axlcrvz" target="_blank" class="social-button">Instagram</a>
+            <a href="https://www.facebook.com/axlcrvz" target="_blank" class="social-button">Facebook</a>
+            <a href="https://wa.me/1234567890" target="_blank" class="social-button">WhatsApp</a>
+            <a href="https://www.threads.net/axlcrvz" target="_blank" class="social-button">Threads</a>
+            <a href="https://www.linkedin.com/in/axlcrvz" target="_blank" class="social-button">LinkedIn</a>
+            <a href="https://www.tiktok.com/@axlcrvz" target="_blank" class="social-button">TikTok</a>
+        </section>
 
-    <p style="text-align:center;">© 2024 @axlcrvz | axlcrvz.com</p>
+        <p style="text-align:center;">© 2024 @axlcrvz | axlcrvz.com</p>
+    </div>
 </body>
 </html>
