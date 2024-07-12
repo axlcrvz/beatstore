@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próxima Reapertura de Mr. Taco - ¡Nos Mudamos!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-9pxeqo/6XlZ+h+OYDW7nql0E0H/fbDEU6+oQ0y1v1UEw4ED2ppvgH2WS3Qe64iqI/3qKcaDVZM5K9nTx0RxW8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            line-height: 1.6;
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        .announcement {
+            background-color: #111111;
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+        .announcement h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        .announcement p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+        .countdown {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #f0ad4e;
+        }
+        .event-details {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .event-details p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .event-details ul {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+        .event-details ul li {
+            font-size: 24px;
+            margin-bottom: 15px;
+            list-style: none;
+            color: #ffffff;
+        }
+        .feature-box {
+            background-color: #222222;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+        .feature-box h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        .feature-box p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #ffffff;
+        }
+        .location-map {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .location-map img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+        .testimonials {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .testimonials h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        .testimonial {
+            background-color: #333333;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+        .testimonial p {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .testimonial-author {
+            font-size: 18px;
+            font-style: italic;
+            text-align: right;
+            color: #999999;
+        }
+        .social-media {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .social-media a {
+            display: inline-block;
+            text-decoration: none;
+            margin: 0 20px;
+            color: #ffffff;
+            font-size: 36px;
+            transition: color 0.3s ease;
+        }
+        .social-media a:hover {
+            color: #f0ad4e;
+        }
+        .footer {
+            background-color: #111111;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 0 0 20px 20px;
+        }
+        .footer p {
+            font-size: 16px;
+            margin: 0;
+            color: #ffffff;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #f0ad4e;
+            color: #000000;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 20px 40px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            text-align: center;
+            line-height: 1;
+            border: 2px solid #f0ad4e;
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+        }
+        .cta-button:hover {
+            background-color: #e89e3e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo-mr-taco.png" alt="Mr. Taco Logo" class="logo">
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="announcement">
+            <h1>Próxima Reapertura de Mr. Taco</h1>
+            <p>¡Nos mudamos a un lugar más grande para seguir deleitándote con lo mejor!</p>
+            
+            <div class="countdown">
+                <p>Contando los días para nuestra gran inauguración:</p>
+                <span id="days">00</span> días <span id="hours">00</span> horas <span id="minutes">00</span> minutos <span id="seconds">00</span> segundos
+            </div>
+            
+            <div class="event-details">
+                <p>Detalles del Evento:</p>
+                <ul>
+                    <li><strong>Ubicación:</strong> A unos pasos de nuestra ubicación actual en Plaza Contenedores.</li>
+                    <li><strong>Fecha de Apertura:</strong> Muy pronto (fecha exacta por confirmar).</li>
+                </ul>
+            </div>
+            
+            <div class="cta-button">
+                <a href="#">Sigue nuestras redes sociales para más detalles</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="feature-box">
+                <h2>Descubre la Nueva Era de Mr. Taco</h2>
+                <p>Disfruta de un espacio amplio y moderno diseñado para tu comodidad y disfrute.</p>
+            </div>
+        </div>
+        
+        <div class="location-map">
+            <h2>Ubicación de la Nueva Sucursal</h2>
+            <img src="location-map-mr-taco.png" alt="Mapa de Ubicación de Mr. Taco">
+        </div>
+        
+        <div class="testimonials">
+            <h2>Lo que Nuestros Clientes Dicen</h2>
+            
+            <div class="testimonial">
+                <p>"¡Siempre es un placer venir a Mr. Taco! La comida es deliciosa y el ambiente es muy acogedor. No puedo esperar para visitar la nueva ubicación."</p>
+                <p class="testimonial-author">- María Sánchez</p>
+            </div>
+            
+            <div class="testimonial">
+                <p>"He sido fanático de Mr. Taco desde hace años. La calidad de los ingredientes y el sabor auténtico son incomparables. ¡Felicidades por la expansión!"</p>
+                <p class="testimonial-author">- Roberto López</p>
+            </div>
+        </div>
+        
+        <div class="social-media">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2024 Mr. Taco - Todos los derechos reservados</p>
+        </div>
+    </div>
+    <script>
+        // Countdown Timer Script (replace with actual countdown logic)
+        function countdown() {
+            // Replace with actual countdown logic
+            const daysElement = document.getElementById('days');
+            const hoursElement = document.getElementById('hours');
+            const minutesElement = document.getElementById('minutes');
+            const secondsElement = document.getElementById('seconds');
+            
+            // Example countdown values (replace with actual countdown values)
+            let days = 5;
+            let hours = 12;
+            let minutes = 30;
+            let seconds = 45;
+            
+            daysElement.textContent = days < 10 ? '0' + days : days;
+            hoursElement.textContent = hours < 10 ? '0' + hours : hours;
+            minutesElement.textContent = minutes < 10 ? '0' + minutes : minutes;
+            secondsElement.textContent = seconds < 10 ? '0' + seconds : seconds;
+        }
+        
+        // Call countdown function
+        countdown();
+    </script>
+</body>
+</html>
