@@ -1,159 +1,258 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Próxima Reapertura de Mr. Taco</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Próxima Reapertura de Mr. Taco - ¡Nos Mudamos!</title>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px 0;
-        }
-        header img {
-            height: 40px;
-            margin-right: 10px;
-        }
-        header h1 {
-            font-size: 2em;
-            margin: 0;
-            color: #000;
-        }
-        .hero {
-            padding: 50px 20px;
-        }
-        .hero h2 {
-            font-size: 2em;
-            margin: 0 0 20px;
-            color: #000;
-        }
-        .details, .expect, .follow, .social-media {
-            margin: 40px 0;
-            text-align: left;
-        }
-        h2 {
-            color: #000;
-        }
-        .button {
-            background-color: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 10px 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .button img {
-            height: 20px;
-            margin-right: 10px;
-        }
-        .cta {
-            background-color: #e0e0e0;
-            padding: 20px;
-        }
-        footer {
-            padding: 20px 0;
-            text-align: center;
-        }
-        .social-icons {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .social-icons li {
-            margin: 0 10px;
-        }
-        .social-icons a {
-            color: #000;
-            font-size: 1.2em;
-            text-decoration: none;
-        }
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        background-color: #000000;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .logo {
+        max-width: 200px;
+        margin-bottom: 20px;
+      }
+
+      .section {
+        background-color: #111111;
+        padding: 40px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 48px;
+        letter-spacing: 2px;
+      }
+
+      h2 {
+        font-size: 36px;
+        letter-spacing: 1.5px;
+      }
+
+      h3 {
+        font-size: 28px;
+        letter-spacing: 1px;
+      }
+
+      p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      ul li {
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: #f0ad4e;
+        color: #000000;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 20px 40px;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        text-align: center;
+        line-height: 1;
+        border: 2px solid #f0ad4e;
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+      }
+
+      .cta-button:hover {
+        background-color: #e89e3e;
+      }
+
+      .footer {
+        background-color: #111111;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+        border-radius: 0 0 20px 20px;
+      }
+
+      .footer p {
+        font-size: 16px;
+        margin: 0;
+        color: #ffffff;
+      }
+
+      .section-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .highlight-text {
+        color: #f0ad4e;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .feature-box {
+        background-color: #222222;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      }
+
+      .feature-box h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .feature-box p {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+
+      .feature-box ul {
+        margin-bottom: 0;
+      }
+
+      .feature-box ul li {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      .social-media {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .social-media a {
+        display: inline-block;
+        text-decoration: none;
+        margin: 0 10px;
+        color: #ffffff;
+        font-size: 24px;
+        transition: color 0.3s ease;
+      }
+
+      .social-media a:hover {
+        color: #f0ad4e;
+      }
+
+      .testimonial {
+        background-color: #333333;
+        padding: 40px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+      }
+
+      .testimonial p {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .testimonial-author {
+        font-size: 16px;
+        font-style: italic;
+        text-align: right;
+        color: #999999;
+      }
     </style>
-</head>
-<body>
-    <header>
-        <img src="logo.png" alt="Mr. Taco Logo">
-        <h1>Mr. Taco</h1>
-    </header>
-
+  </head>
+  <body>
     <div class="container">
-        <section class="hero">
-            <h2>🌟 Próxima Reapertura de Mr. Taco: ¡Nos Mudamos a un Lugar Más Grande!</h2>
-        </section>
-
-        <section class="details">
-            <h2>☑️ Detalles de la Nueva Sucursal</h2>
-            <p>📍Ubicación: A unos pasos de nuestra ubicación actual, sobre la misma calle.</p>
-            <p>⏰ Apertura: Muy pronto (fecha exacta por confirmar).</p>
-        </section>
-
-        <section class="expect">
-            <h2>🤔 ¿Qué Puedes Esperar?</h2>
-            <p>👨🏻‍🍳 Un espacio más amplio y moderno.</p>
-            <p>🎖️ Mejoras en la atención y servicio.</p>
-            <p>🏷️ Promociones y eventos especiales durante la semana de la reapertura.</p>
-        </section>
-
-        <section class="follow">
-            <h2>📆 ¡Mantente Informado!</h2>
-            <p>🕒 Sigue nuestras redes sociales para actualizaciones sobre la fecha exacta, promociones exclusivas y eventos especiales.</p>
-        </section>
-
-        <section class="social-media">
-            <h2>🔗 Síguenos en Redes Sociales</h2>
-            <div>
-                <a href="#" class="button"><img src="icon-whatsapp.png" alt="WhatsApp Icon"> WhatsApp</a>
-                <a href="#" class="button"><img src="icon-instagram.png" alt="Instagram Icon"> Instagram</a>
-                <a href="#" class="button"><img src="icon-facebook.png" alt="Facebook Icon"> Facebook</a>
-                <a href="#" class="button"><img src="icon-threads.png" alt="Threads Icon"> Threads</a>
-                <a href="#" class="button"><img src="icon-x.png" alt="X Icon"> X</a>
-                <a href="#" class="button"><img src="icon-tiktok.png" alt="TikTok Icon"> TikTok</a>
-                <a href="#" class="button"><img src="icon-linkedin.png" alt="LinkedIn Icon"> LinkedIn</a>
-            </div>
-        </section>
-
-        <section class="cta">
-            <h2>¡No te pierdas nuestra reapertura!</h2>
-            <p>Únete a nuestra lista de espera para recibir todas las novedades y promociones exclusivas directamente en tu correo.</p>
-            <a href="#" class="button"><img src="icon-email.png" alt="Email Icon"> Unirse a la Lista de Espera</a>
-        </section>
-
-        <p>🙏🏼 ¡Gracias por tu apoyo! Nos vemos pronto en el nuevo Mr. Taco!</p>
-
-        <p>🛑 No cerraremos. Abrimos por última vez en Plaza Contenedores y al día siguiente en la nueva ubicación ❗️</p>
-    </div>
-
-    <footer>
-        <ul class="social-icons">
-            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-threads"></i></a></li>
-            <li><a href="#"><i class="fab fa-x"></i></a></li>
-            <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
+      <div class="header">
+        <img src="logo-mr-taco.png" alt="Mr. Taco Logo" class="logo">
+      </div>
+      <div class="section">
+        <h1>Próxima Reapertura de Mr. Taco: ¡Nos Mudamos a un Lugar Más Grande!</h1>
+        <p>Mr. Taco se complace en anunciar su emocionante próxima etapa: una nueva ubicación diseñada para elevar tu experiencia gastronómica al siguiente nivel. Con el apoyo incondicional de nuestra comunidad, hemos superado la capacidad de nuestra ubicación actual en Plaza Contenedores. Para continuar brindándote lo mejor, nos trasladamos a un espacio más amplio y moderno a solo unos pasos de nuestra ubicación original, manteniendo la misma calle que ya conoces y amas.</p>
+      </div>
+      <div class="social-media">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">YouTube</a>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Descubre la Nueva Era de Mr. Taco</h2>
+        <div class="feature-box">
+          <h3>Detalles de la Nueva Sucursal</h3>
+          <ul>
+            <li>
+              <strong>Ubicación:</strong> A pocos pasos de nuestra ubicación actual en Plaza Contenedores.
+            </li>
+            <li>
+              <strong>Fecha de Apertura:</strong> Muy pronto (fecha exacta por confirmar).
+            </li>
+          </ul>
+        </div>
+        <div class="feature-box">
+          <h3>¿Qué Puedes Esperar?</h3>
+          <ul>
+            <li>
+              <strong>Un Ambiente Amplio y Moderno:</strong> Espacios diseñados para tu comodidad y disfrute.
+            </li>
+            <li>
+              <strong>Mejora Continua en el Servicio:</strong> Atención al cliente excepcional y servicio de calidad.
+            </li>
+            <li>
+              <strong>Promociones y Eventos Especiales:</strong> Celebraremos nuestra inauguración con promociones exclusivas y eventos para toda la familia durante la semana de apertura.
+            </li>
+          </ul>
+        </div>
+        <div class="feature-box">
+          <h3>¡Mantente Informado!</h3>
+          <p>Sigue nuestras redes sociales para recibir actualizaciones en tiempo real sobre la fecha exacta de apertura, promociones exclusivas y eventos especiales que no querrás perderte.</p>
+        </div>
+      </div>
+      <a href="#" class="cta-button">Síguenos en Redes Sociales</a>
+      <div class="testimonial">
+        <p>"Mr. Taco no solo es una experiencia culinaria, es un lugar donde se mezclan sabores auténticos con un servicio impecable. Estoy emocionado por la nueva ubicación y lo que nos espera".</p>
+        <p class="testimonial-author">- Cliente Satisfecho</p>
+      </div>
+      <div class="footer">
         <p>&copy; 2024 Mr. Taco. Todos los derechos reservados.</p>
-    </footer>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
