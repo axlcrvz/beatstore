@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Producer Portfolio</title>
+    <style>
+        /* Basic reset and styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #0d0d0d;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .hero {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        .about, .services, .portfolio, .contact {
+            background-color: #1a1a1a;
+            padding: 40px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        .about h2, .services h2, .portfolio h2, .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+        }
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            opacity: 0.8;
+            margin-top: 20px;
+        }
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .services ul li {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            opacity: 0.9;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .portfolio .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .portfolio .gallery img {
+            max-width: 100%;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        .portfolio .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .contact form input, .contact form textarea, .contact form button {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #333;
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .contact form button {
+            background-color: #555;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 15px;
+            padding: 18px;
+            border: 2px solid #fff;
+        }
+        .contact form button:hover {
+            background-color: #777;
+            border-color: #555;
+        }
+        footer {
+            background-color: #0d0d0d;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Music Producer Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Welcome to the Music Producer's Portfolio</h1>
+            <p>Your tagline or brief description can go here.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Brief introduction about yourself and your music production journey.</p>
+            <img src="profile.jpg" alt="Profile Photo">
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Services Offered</h2>
+            <ul>
+                <li>Exclusive Beat Production</li>
+                <li>High-End Studio Recording Sessions</li>
+                <li>Premium Mixing and Mastering</li>
+                <!-- Add more services as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+                <img src="portfolio1.jpg" alt="Portfolio Item 1">
+                <img src="portfolio2.jpg" alt="Portfolio Item 2">
+                <img src="portfolio3.jpg" alt="Portfolio Item 3">
+                <!-- Add more portfolio items -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Music Producer Portfolio. All rights reserved.</p>
+            <!-- Social media icons or links -->
+        </div>
+    </footer>
+</body>
+</html>
