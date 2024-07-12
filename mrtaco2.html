@@ -4,135 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Próxima Reapertura de Mr. Taco</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-        header {
-            background-color: #d32f2f;
+            background-color: #000;
             color: #fff;
-            padding: 20px 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
-        header h1 {
-            margin: 0;
+        .navbar {
+            background-color: #1e1e1e;
+            padding: 15px 0;
+        }
+        .navbar-brand {
+            color: #d9534f;
+            font-size: 1.5rem;
+        }
+        .navbar-nav .nav-link {
+            color: #f0f0f0;
+            font-size: 1.1rem;
         }
         .hero {
-            background: url('hero-image.jpg') no-repeat center center;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
             background-size: cover;
-            color: #fff;
-            padding: 100px 20px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        .hero h2 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        .details, .expect, .follow {
-            margin: 40px 0;
-            text-align: left;
-        }
-        h2 {
-            color: #d32f2f;
-        }
-        .button {
-            background-color: #d32f2f;
-            color: #fff;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 10px 0;
-        }
-        .cta {
-            background-color: #f1f1f1;
-            padding: 40px 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
         }
-        .social-icons {
+        .hero h1 {
+            color: #fff;
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .section h2 {
+            color: #d9534f;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        .section p, .section ul {
+            font-size: 1.2rem;
+        }
+        .section ul {
             list-style: none;
             padding: 0;
-            display: flex;
-            justify-content: center;
         }
-        .social-icons li {
+        .section ul li {
+            margin-bottom: 20px;
+        }
+        .social-media a {
+            display: inline-block;
             margin: 0 10px;
-        }
-        .social-icons a {
+            padding: 15px 30px;
             color: #fff;
-            font-size: 1.5em;
+            background-color: #d9534f;
+            border-radius: 5px;
             text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .social-media a:hover {
+            background-color: #c7473c;
+        }
+        footer {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            color: #a9a9a9;
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Mr. Taco</h1>
-    </header>
-
-    <section class="hero">
-        <h2>🌟 Próxima Reapertura de Mr. Taco: ¡Nos Mudamos a un Lugar Más Grande!</h2>
-        <a href="#detalles" class="button">Descubre Más</a>
-    </section>
-
-    <div class="container">
-        <section id="detalles" class="details">
-            <h2>☑️ Detalles de la Nueva Sucursal</h2>
-            <p>📍Ubicación: A unos pasos de nuestra ubicación actual, sobre la misma calle.</p>
-            <p>⏰ Apertura: Muy pronto (fecha exacta por confirmar).</p>
-        </section>
-
-        <section class="expect">
-            <h2>🤔 ¿Qué Puedes Esperar?</h2>
-            <p>👨🏻‍🍳 Un espacio más amplio y moderno.</p>
-            <p>🎖️ Mejoras en la atención y servicio.</p>
-            <p>🏷️ Promociones y eventos especiales durante la semana de la reapertura.</p>
-        </section>
-
-        <section class="follow">
-            <h2>📆 ¡Mantente Informado!</h2>
-            <p>🕒 Sigue nuestras redes sociales para actualizaciones sobre la fecha exacta, promociones exclusivas y eventos especiales.</p>
-            <div>
-                <a href="#" class="button">Síguenos en Facebook</a>
-                <a href="#" class="button">Síguenos en Instagram</a>
+<body data-spy="scroll" data-target="#navbar" data-offset="70">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mr. Taco</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#details">Detalles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#expect">¿Qué Esperar?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stay-informed">Mantente Informado</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contáctanos</a></li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section class="cta">
-            <h2>¡No te pierdas nuestra reapertura!</h2>
-            <p>Únete a nuestra lista de espera para recibir todas las novedades y promociones exclusivas directamente en tu correo.</p>
-            <a href="#" class="button">Unirse a la Lista de Espera</a>
-        </section>
+    <div class="hero" id="hero">
+        <div class="container">
+            <h1>Próxima Reapertura de Mr. Taco</h1>
+            <p class="lead">¡Nos Mudamos a un Lugar Más Grande!</p>
+        </div>
+    </div>
 
-        <p>🙏🏼 ¡Gracias por tu apoyo! Nos vemos pronto en el nuevo Mr. Taco!</p>
+    <div class="section" id="details">
+        <div class="container">
+            <h2>Detalles de la Nueva Sucursal</h2>
+            <p>Mr. Taco se mudará a una nueva ubicación para ofrecerte una mejor experiencia. Gracias a la <span class="highlight">increíble demanda</span>, hemos superado la capacidad de nuestra ubicación actual en Plaza Contenedores. Por eso, abriremos una <span class="highlight">sucursal más amplia y cómoda</span>.</p>
+            <ul>
+                <li><span class="bold underline">Ubicación:</span> A unos pasos de nuestra ubicación actual, sobre la misma calle.</li>
+                <li><span class="bold underline">Apertura:</span> Muy pronto (fecha exacta por confirmar).</li>
+            </ul>
+        </div>
+    </div>
 
-        <p class="pd">🛑 P.D: No cerraremos. Abrimos por última vez en Plaza Contenedores y al día siguiente en la nueva ubicación ❗️</p>
+    <div class="section bg-dark" id="expect">
+        <div class="container">
+            <h2>¿Qué Puedes Esperar?</h2>
+            <ul>
+                <li>Un espacio más <span class="highlight">amplio y moderno</span>.</li>
+                <li>Mejoras en la <span class="highlight">atención y servicio</span>.</li>
+                <li><span class="highlight">Promociones</span> y <span class="highlight">eventos especiales</span> durante la semana de la reapertura.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section" id="stay-informed">
+        <div class="container">
+            <h2>¡Mantente Informado!</h2>
+            <p>Sigue nuestras redes sociales para actualizaciones sobre la fecha exacta, promociones exclusivas y eventos especiales.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-dark" id="contact">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p>Para más información, contáctanos a través de nuestras redes sociales o visítanos en nuestra nueva ubicación.</p>
+        </div>
     </div>
 
     <footer>
-        <ul class="social-icons">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul>
         <p>&copy; 2024 Mr. Taco. Todos los derechos reservados.</p>
+        <p><a href="#">Privacidad</a> | <a href="#">Términos</a></p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
