@@ -87,17 +87,7 @@
         display: flex;
     }
 }
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('.nav-menu');
-
-            hamburger.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-            });
-        });
-    </script>
-
+    
 .nav {
     display: flex;
     justify-content: center;
@@ -177,7 +167,16 @@
             <div class="bar"></div>
         </div>
     </nav>
-    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
     
         
         <!-- Header Section -->
