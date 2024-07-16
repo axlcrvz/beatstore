@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Base</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Bienvenido a Mi Sitio Web</h1>
+            <p>Descubre nuestros servicios y productos.</p>
+        </header>
+
+        <!-- Navigation Section -->
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="services.html">Servicios</a>
+            <a href="beats.html">Beats</a>
+            <a href="contact.html">Contacto</a>
+        </nav>
+
+        <!-- Main Content Section -->
+        <section>
+            <h2 class="section-title">Contenido Principal</h2>
+            <p>Bienvenido a nuestra página de inicio. Aquí puedes encontrar información sobre nuestros servicios y productos. Navega a través de nuestras secciones para descubrir más.</p>
+
+            <!-- Call-to-Action Buttons -->
+            <a class="cta-button" href="digital-strategies.html">Estrategias Digitales a tu Medida</a>
+            <a class="cta-button" href="online-presence.html">Tu Presencia Online Simplificada</a>
+            <a class="cta-button" href="buy-trap-beats.html">Compra Beats de Rap</a>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
