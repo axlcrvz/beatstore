@@ -37,6 +37,59 @@
 }
 .nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.nav {
+    display: flex;
     justify-content: center;
     margin: 20px 0;
 }
@@ -100,15 +153,21 @@
             <h2>@axlcrvz</h2>
         </div>
                 <!-- Navigation Section -->
-            <div class="profile">
-        <nav class="nav">
+                <nav class="nav">
+        <div class="nav-menu">
             <a href="index.html">Inicio</a>
             <a href="estrategias-digitales.html">Estrategias Digitales</a>
             <a href="presencia-digital.html">Presencia Digital</a>
             <a href="beats.html">Beats</a>
             <a href="contacto.html">Contacto</a>
-        </nav>
         </div>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <script src="scripts.js"></script>
     
         
         <!-- Header Section -->
